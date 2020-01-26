@@ -22,9 +22,10 @@ class UploadComponent extends Component
 				$filename = $file['name'];
 				$file_tmp_name = $file['tmp_name'];
 				$dir = WWW_ROOT.'img'.DS.'uploads';
-				$allowed = array('png','jpg','jpeg');
+				$allowed = array('png','jpg','jpeg','svg','JPG','gif');
 				if(!in_array(substr(strrchr($filename, '.'), 1), $allowed))
-					throw new NotFoundException("Errot Processing Request", 1);
+					throw new NotFoundException("Error Processing Request", 1);
+
 				elseif(is_uploaded_file($file_tmp_name)){
 					$filename =Text::uuid().'-'.$filename;
 

@@ -45,18 +45,18 @@ class AppController extends Controller
             'enableBeforeRedirect' => false,
         ]);
         $this->loadComponent('Flash');
-        $this->loadComponent('Auth', [
-            'authorize' => ['Controller'],
-            'loginRedirect' => [
-                'controller' => 'Articles',
-                'action' => 'index'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Articles',
-                'action' => 'index',
+        // $this->loadComponent('Auth', [
+        //     'authorize' => ['Controller'],
+        //     'loginRedirect' => [
+        //         'controller' => 'Articles',
+        //         'action' => 'index'
+        //     ],
+        //     'logoutRedirect' => [
+        //         'controller' => 'Articles',
+        //         'action' => 'index',
 
-            ]
-        ]);
+        //     ]
+        // ]);
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -64,18 +64,18 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
     }
-    public function isAuthorized($user)
-    {
-        // Admin pode acessar todas as actions
-        if (isset($user['role']) && $user['role'] === 'admin') {
-            return true;
-        }
+    // // public function isAuthorized($user)
+    // // {
+    // //     // Admin pode acessar todas as actions
+    // //     if (isset($user['role']) && $user['role'] === 'admin') {
+    // //         return true;
+    // //     }
 
-        // Bloqueia acesso por padrão
-        return false;
-    }
-    public function beforeFilter(Event $event)
-    {
-        $this->Auth->allow(['index', 'view', 'display']);
-    }
+    // //     // Bloqueia acesso por padrão
+    // //     return false;
+    // // }
+    // public function beforeFilter(Event $event)
+    // {
+    //     $this->Auth->allow(['index', 'view', 'display']);
+    // }
 }
