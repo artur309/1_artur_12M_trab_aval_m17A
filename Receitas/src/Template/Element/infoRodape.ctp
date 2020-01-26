@@ -1,0 +1,1 @@
+<center><p>Direitos Reservados a CakePHP e artur309</p></center>
