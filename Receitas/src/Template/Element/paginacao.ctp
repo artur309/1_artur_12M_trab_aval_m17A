@@ -1,6 +1,6 @@
 <div class="paginator">
 	<ul class="pagination">
-		<?= 'Pagina Atual', $this->Paginator->current($controller); ?>
+		<?= 'Pagina Atual: ', $this->Paginator->current($controller); ?>
 		<?= $this->Paginator->first('<< ' . __('Primeiro')) ?>
 		<?= $this->Paginator->prev('< ' . __('Anterior')) ?>
 		<?= $this->Paginator->numbers() ?>

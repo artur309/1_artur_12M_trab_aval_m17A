@@ -8,7 +8,7 @@ a:hover {
 }
 
 a {
-	color: #1798A5;
+	color: #ffffff;
 }
 
 .side-nav li a:not(.button) {
@@ -307,23 +307,25 @@ pre {
 }
 
 .checks .success:before {
-	content: "✓";
+	content: "ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“";
 	color: green;
 	margin-right: 9px;
 }
 
 .checks .problem:before {
-	content: "✘";
+	content: "ÃƒÂ¢Ã…â€œÃ‹Å“";
 	color: red;
 	margin-right: 9px;
 }
 
 .top-bar.expanded .title-area {
-	background: #37105c;
+	text-align: center;
+	background: linear-gradient(45deg, black, #d78a04);
+	position: absolute;
 }
 
 .top-bar.expanded, .top-bar,.top-bar-section ul li,.top-bar-section li:not(.has-form) a:not(.button) {
-	background: #000000;
+	background: #2b141430;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button):hover {
@@ -351,7 +353,8 @@ pre {
 }
 
 table {
-	background: #fff;
+	color: white;
+	background: #000;
 	margin-bottom: 1.25rem;
 	border: none;
 	table-layout: fixed;
@@ -363,6 +366,7 @@ table thead {
 }
 
 table tr {
+	color: white;
 	border-bottom: 1px solid #ebebec;
 }
 
@@ -375,7 +379,7 @@ table tr th {
 	font-size: 0.875rem;
 	color: #1798A5;
 	text-align: left;
-	border-bottom: 2px solid #1798A5;
+	border-bottom: 2px solid #f08a24;
 }
 
 table tr:nth-of-type(even) {
@@ -407,6 +411,20 @@ fieldset legend {
 
 button {
 	background: #966600;
+}
+
+.button, button{
+	margin: 0 5px;
+	margin-bottom: 1.0rem;
+	background-color: orange;
+	border-color: orange;
+}
+.button:hover, button:hover{
+	transition: all 0.3s cubic-bezier(0.15, 0.9, 0.34, 0);
+	margin: 0 5px;
+	margin-bottom: 1.0rem;
+	background-color: red;
+	border-color: red;
 }
 
 div.message {

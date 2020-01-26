@@ -12,15 +12,15 @@
 
 2. É permitido o *upload* de ficheiros múltiplos num cenário credível e adaptado ao tema abordado
 
-   - [ ] Feito
+   - [x] Feito
 
 3. Existe uma galeria de imagens, com todas as que existem na pasta criada *upload*
 
-   - [ ] Feito
+   - [x] Feito
 
 4. Todas as paginas têm a paginação ativa
 
-   - [ ] Feito
+   - [x] Feito
 
 5. É possível escolher o idioma com que as *views* aparecerão
 
@@ -33,7 +33,7 @@
 
 7. Comentários ao código, em locais apropriado e com critério
 
-   - [ ] Feito
+   - [x] Feito
 
 8. Webgrafia, apresentada numa *view* através dum controlo interno, um objeto de formulário
 
