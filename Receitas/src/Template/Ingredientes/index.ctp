@@ -1,8 +1,10 @@
-<?= $this->Html->link(__('Galeria de Receitas'), ['controller' => 'Files','action' => 'index'], ['class' => 'button left']) ?>
-
-<div class="ingredientes index content">
+<div class="buttons">
+	<?= $this->Html->link(__('Galeria de Receitas'), ['controller' => 'Files','action' => 'index'], ['class' => 'button left']) ?>
 	<?= $this->Html->link(__('Nova Ingrediente'), ['action' => 'add'], ['class' => 'button float-right']) ?>
 	<?= $this->Html->link(__('Lista de Receitas'), ['controller' => 'Receitas','action' => 'index'], ['class' => 'button float-right']) ?>
+</div>
+
+<div class="ingredientes index content">	
 
 	<h3><?= __('Ingredientes') ?></h3>
 	<div class="table-responsive">

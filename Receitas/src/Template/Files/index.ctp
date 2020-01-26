@@ -1,4 +1,9 @@
-<?= $this->Html->link(__('Voltar'), ['controller' => 'Files','action' => 'back'], ['class' => 'button left']) ?>
+
+<div>
+	<?= $this->Html->link(__('Lista de Receitas'), ['controller' => 'Receitas','action' => 'index'], ['class' => 'button float-right']) ?>
+	<?= $this->Html->link(__('Lista de Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>
+</div>
+
 
 <div>
 	<?php echo $this->Form->create('Files', ['type' => 'file']); ?>
