@@ -1,4 +1,5 @@
 <?php
+//selecao de idiomas
 echo $this->Form->create("Idiomas",array('url'=>'/Receitas'));
 echo $this->Form->radio("Idiomas",[
 	['value'=>'de_DE','text'=>'German'],
@@ -10,5 +11,5 @@ echo $this->Form->radio("Idiomas",[
 ]);
 echo $this->Form->button('Change Language');
 echo $this->Form->end();
-
-echo __('Aplicação para as traduções automáticas');
+?>
+<?= $this->element('infoRodape'); //rodape de informacao ?>

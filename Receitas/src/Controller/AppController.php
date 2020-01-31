@@ -20,16 +20,6 @@ use Cake\I18n\I18n;
 
 class AppController extends Controller
 {
-
-	/**
-	 * Initialization hook method.
-	 *
-	 * Use this method to add common initialization code like loading components.
-	 *
-	 * e.g. `$this->loadComponent('Security');`
-	 *
-	 * @return void
-	 */
 	public function initialize()
 	{
 		parent::initialize();
@@ -38,20 +28,5 @@ class AppController extends Controller
 			'enableBeforeRedirect' => false,
 		]);
 		$this->loadComponent('Flash');
-		
-		/*
-		 * Enable the following component for recommended CakePHP security settings.
-		 * see https://book.cakephp.org/3.0/en/controllers/components/security.html
-		 */
-		//$this->loadComponent('Security');
-	}
-	function _setErrorLayout() {  
-		if ($this->name == 'CakeError') {  
-			$this->layout = 'error';  
-		}    
-	}              
-
-	function beforeRender () {  
-		$this->_setErrorLayout();
 	}
 }
