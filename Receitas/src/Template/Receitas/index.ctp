@@ -1,9 +1,8 @@
 <div class="buttons">
 	<?= $this->Html->link(__('Galeria de Receitas'), ['controller' => 'Files','action' => 'index'], ['class' => 'button left']) ?>
 	<?= $this->Html->link(__('Nova Receita'), ['action' => 'add'], ['class' => 'button float-left']) ?>
-	<?= $this->Html->link(__('Lista de Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>
+	<?= $this->Html->link(__('Listar Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>
 </div>
-
 
 <div class="receitas index content">
 
@@ -13,9 +12,9 @@
 			<thead>
 				<tr>
 					<th><?= $this->Paginator->sort('id') ?></th>
-					<th><?= $this->Paginator->sort('nome') ?></th>
-					<th><?= $this->Paginator->sort('descrição') ?></th> 
-					<th class="actions"><?= __('Actions') ?></th>
+					<th><?= $this->Paginator->sort(__('nome')) ?></th>
+					<th><?= $this->Paginator->sort(__('descrição')) ?></th> 
+					<th class="actions"><?= __('Ações') ?></th>
 				</tr>
 			</thead>
 			<tbody>

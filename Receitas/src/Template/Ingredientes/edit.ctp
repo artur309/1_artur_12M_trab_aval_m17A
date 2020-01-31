@@ -39,11 +39,11 @@
 <div class="row">
 	<aside class="column">
 		<div class="side-nav">
-			<h4 class="heading"><?= __('Actions') ?></h4>
+			<h4 class="heading"><?= __('Ações') ?></h4>
 			<?= $this->Form->postLink(
-				__('Delete'),
+				__('Apagar'),
 				['action' => 'delete', $ingrediente->id],
-				['confirm' => __('Are you sure you want to delete # {0}?', $ingrediente->id), 'class' => 'side-nav-item']
+				['confirm' => __('Tens a certeza que queres apagar # {0}?', $ingrediente->id), 'class' => 'side-nav-item']
 			) ?>
 			<?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
 		</div>
@@ -53,9 +53,9 @@
 			<?= $this->Form->create($ingrediente) ?>
 			<fieldset>
 				<legend><?= __('Editar Ingrediente') ?></legend>
-				<?php echo $this->Form->control('nome'); ?>
+				<?php echo $this->Form->control(__('nome')); ?>
 			</fieldset>
-			<?= $this->Form->button(__('Submit')) ?>
+			<?= $this->Form->button(__('Submeter')) ?>
 			<?= $this->Form->end() ?>
 		</div>
 	</div>

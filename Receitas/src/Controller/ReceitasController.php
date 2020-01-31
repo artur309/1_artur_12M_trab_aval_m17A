@@ -1,18 +1,36 @@
 <?php
-
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\I18n\I18n;
 
 class ReceitasController extends AppController
 {
 	public function index()
 	{
+		if($this->request->is('post'))
+		{
+			$locale = $this->request->data('Idiomas');
+			I18n::locale($locale);
+		}
+		
 		$this->Receitas->recursive = 0;
 		$this->paginate = array('limit'=>3);
 		$this->set('receita',$this->paginate());
-		
 		// $this->set(compact('receita'));
+	}
+
+	public function lastPosts($limit)
+	{
+		$articles = $this->Receitas->find('all',
+			array(
+				'fields'=>array('id','nome','descricao'),
+				'recursive'=>0,
+				'order'=>array('created DESC'),
+				'limit'=>$limit)
+		);
+		$this->response->body(json_encode($articles));
+		return $this->response;
 	}
 
 	public function view($id = null)
@@ -46,8 +64,7 @@ class ReceitasController extends AppController
 			}
 			$this->Flash->error(__('Erro ao salvar a receita. Tente outra vez mais tarde.'));
 		}
-		$this->set(compact('receita'));
-		$this->viewBuilder()->setOption('serialize', ['receita']);
+		$this->set(compact('receita')); 
 	}
 
 	public function delete($id = null)

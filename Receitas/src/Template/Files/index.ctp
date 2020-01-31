@@ -1,16 +1,14 @@
-
 <div>
-	<?= $this->Html->link(__('Lista de Receitas'), ['controller' => 'Receitas','action' => 'index'], ['class' => 'button float-right']) ?>
-	<?= $this->Html->link(__('Lista de Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>
+	<?= $this->Html->link(__('Listar Receitas'), ['controller' => 'Receitas','action' => 'index'], ['class' => 'button float-right']) ?>
+	<?= $this->Html->link(__('Listar Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>
 </div>
-
 
 <div>
 	<?php echo $this->Form->create('Files', ['type' => 'file']); ?>
 	<center><h1><?= __('Galeria de Receitas')?></h1></center>
 	<?php
 	echo $this->Form->file('uploadfile.', ['multiple'],['value' => '']);
-	echo $this->Form->button('Submeter', ['type' => 'submit'],['controller' => 'Files','action' => 'index']);
+	echo $this->Form->button(__('Submeter'), ['type' => 'submit'],['controller' => 'Files','action' => 'index']);
 	echo $this->Form->end();
 	?>
 </div>

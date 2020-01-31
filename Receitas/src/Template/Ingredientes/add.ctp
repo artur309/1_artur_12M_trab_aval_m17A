@@ -39,7 +39,7 @@
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
+            <h4 class="heading"><?= __('Ações') ?></h4>
             <?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
@@ -48,9 +48,9 @@
             <?= $this->Form->create($ingrediente) ?>
             <fieldset>
                 <legend><?= __('Adicionar Ingrediente') ?></legend>
-                <?php echo $this->Form->control('nome'); ?>
+                <?php echo $this->Form->control(__('nome')); ?>
             </fieldset>
-            <?= $this->Form->button(__('Submit')) ?>
+            <?= $this->Form->button(__('Submeter')) ?>
             <?= $this->Form->end() ?>
         </div>
     </div>

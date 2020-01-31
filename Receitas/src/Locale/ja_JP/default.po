@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: z\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: Template/Element/form.ctp:8
+msgid "Salvar post"
+msgstr "投稿を保存"
+
+#: Template/Element/infoRodape.ctp:2
+msgid "Direitos Reservados a CakePHP e artur309"
+msgstr "CakePHPおよびartur309の権利"
+
+#: Template/Element/paginacao.ctp:4
+msgid "Primeiro"
+msgstr "最初に"
+
+#: Template/Element/paginacao.ctp:5
+msgid "Anterior"
+msgstr "前へ"
+
+#: Template/Element/paginacao.ctp:7
+msgid "Proximo"
+msgstr "次へ"
+
+#: Template/Element/paginacao.ctp:8
+msgid "Último"
+msgstr "最後"
+
+#: Template/Element/paginacao.ctp:10
+msgid "Página {{page}} de {{pages}}, mostrando {{current}} registro de um total de {{count}} total, começando no registro {{start}}, termiando em {{end}}"
+msgstr "{{pages}}の{{Page}}ページ、合計{{count}}の合計の{{current}}レコードを表示、レコード{{start}}で始まり、{{end}}で終わります"
+
+#: Template/Files/index.ctp:2
+#: Template/Ingredientes/index.ctp:4
+#: Template/Receitas/add.ctp:5
+#: Template/Receitas/edit.ctp:48
+#: Template/Receitas/view.ctp:45
+#: Template/Webgrafia/index.ctp:37
+msgid "Listar Receitas"
+msgstr "レシピ一覧"
+
+#: Template/Files/index.ctp:3
+#: Template/Ingredientes/add.ctp:43
+#: Template/Ingredientes/edit.ctp:48
+#: Template/Ingredientes/view.ctp:45
+#: Template/Receitas/index.ctp:4
+#: Template/Webgrafia/index.ctp:38
+msgid "Listar Ingredientes"
+msgstr "成分リスト"
+
+#: Template/Files/index.ctp:8
+#: Template/Ingredientes/index.ctp:2
+#: Template/Receitas/index.ctp:2
+#: Template/Webgrafia/index.ctp:36
+msgid "Galeria de Receitas"
+msgstr "レシピギャラリー"
+
+#: Template/Files/index.ctp:11
+#: Template/Ingredientes/add.ctp:53
+#: Template/Ingredientes/edit.ctp:58
+#: Template/Receitas/edit.ctp:61
+msgid "Submeter"
+msgstr "提出する"
+
+#: Template/Ingredientes/add.ctp:42
+#: Template/Ingredientes/edit.ctp:42
+#: Template/Receitas/edit.ctp:42
+#: Template/Receitas/index.ctp:17
+#: Template/Receitas/view.ctp:42
+msgid "Ações"
+msgstr "アクション"
+
+#: Template/Ingredientes/add.ctp:50
+msgid "Adicionar Ingrediente"
+msgstr "成分を追加"
+
+#: Template/Ingredientes/add.ctp:51
+#: Template/Ingredientes/edit.ctp:56
+#: Template/Ingredientes/index.ctp:14
+#: Template/Receitas/edit.ctp:57
+#: Template/Receitas/index.ctp:15
+msgid "nome"
+msgstr "お名前"
+
+#: Template/Ingredientes/edit.ctp:44
+#: Template/Ingredientes/index.ctp:26
+#: Template/Receitas/edit.ctp:44
+#: Template/Receitas/index.ctp:29
+msgid "Apagar"
+msgstr "削除"
+
+#: Template/Ingredientes/edit.ctp:46
+#: Template/Ingredientes/index.ctp:26
+msgid "Tens a certeza que queres apagar # {0}?"
+msgstr "＃{0}を削除してもよろしいですか？"
+
+#: Template/Ingredientes/edit.ctp:55
+#: Template/Ingredientes/view.ctp:43
+msgid "Editar Ingrediente"
+msgstr "成分を編集"
+
+#: Template/Ingredientes/index.ctp:3
+#: Template/Ingredientes/view.ctp:46
+msgid "Novo Ingrediente"
+msgstr "新成分"
+
+#: Template/Ingredientes/index.ctp:8
+msgid "Ingredientes"
+msgstr "成分"
+
+#: Template/Ingredientes/index.ctp:15
+#: Template/Ingredientes/view.ctp:42
+#: Template/Receitas/add.ctp:4
+msgid "Actions"
+msgstr "アクション"
+
+#: Template/Ingredientes/index.ctp:24
+#: Template/Receitas/index.ctp:27
+msgid "Ver"
+msgstr "見る"
+
+#: Template/Ingredientes/index.ctp:25
+#: Template/Receitas/index.ctp:28
+msgid "Editar"
+msgstr "編集"
+
+#: Template/Ingredientes/view.ctp:44
+msgid "Apagar Ingrediente"
+msgstr "成分を削除"
+
+#: Template/Ingredientes/view.ctp:44
+#: Template/Receitas/view.ctp:44
+msgid "Are you sure you want to delete # {0}?"
+msgstr "＃{0}を削除してもよろしいですか？"
+
+#: Template/Ingredientes/view.ctp:54
+#: Template/Receitas/view.ctp:55
+msgid "id"
+msgstr "id"
+
+#: Template/Ingredientes/view.ctp:58
+#: Template/Receitas/view.ctp:59
+msgid "Nome"
+msgstr "お名前"
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "エラー"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "戻る"
+
+#: Template/Localizations/index.ctp:11
+#: Template/Pages/home.ctp:87
+msgid "msg"
+msgstr "msg"
+
+#: Template/Pages/home.ctp:84
+msgid "Change Language"
+msgstr "言語を変更する"
+
+#: Template/Pages/home.ctp:93
+msgid "Entrar"
+msgstr "サインアップ"
+
+#: Template/Receitas/add.ctp:12
+msgid "Adicionar Receita"
+msgstr "レシピを追加"
+
+#: Template/Receitas/add.ctp:18
+#: View/Helper/FormHelper.php:2028
+msgid "Submit"
+msgstr "提出する"
+
+#: Template/Receitas/edit.ctp:46
+msgid "Tens a certeza que queres apagar #{0}?"
+msgstr "＃{0}を削除してもよろしいですか？"
+
+#: Template/Receitas/edit.ctp:55
+#: Template/Receitas/view.ctp:43
+msgid "Editar Receita"
+msgstr "レシピを編集"
+
+#: Template/Receitas/edit.ctp:58
+msgid "descricao"
+msgstr "説明"
+
+#: Template/Receitas/index.ctp:3
+#: Template/Receitas/view.ctp:46
+msgid "Nova Receita"
+msgstr "新しいレシピ"
+
+#: Template/Receitas/index.ctp:9
+msgid "Receitas"
+msgstr "レシピ"
+
+#: Template/Receitas/index.ctp:16
+msgid "descrição"
+msgstr "説明"
+
+#: Template/Receitas/index.ctp:29
+msgid "Tens a certeza que queres apagar a receita #{0}?"
+msgstr "レシピ番号{0}を削除してもよろしいですか？"
+
+#: Template/Receitas/view.ctp:44
+msgid "Apagar Receita"
+msgstr "レシピを削除"
+
+#: Template/Receitas/view.ctp:63
+msgid "Descrição"
+msgstr "説明"
+
+#: Template/Webgrafia/index.ctp:1
+msgid "WEBGRAFIA"
+msgstr "WEBGRAPHY"
+
+#: Template/Webgrafia/index.ctp:5
+msgid "Documentação Framework CakePHP"
+msgstr "CakePHPフレームワークのドキュメント"
+
+#: Template/Webgrafia/index.ctp:9
+msgid "View das Imagens no Webroot"
+msgstr "ウェブルートの画像の表示"
+
+#: Template/Webgrafia/index.ctp:13
+msgid "Atualizar e Limpar formulário para as imagens"
+msgstr "画像の更新および消去フォーム"
+
+#: Template/Webgrafia/index.ctp:17
+msgid "Tempo e Hora"
+msgstr "時間と時間"
+
+#: Template/Webgrafia/index.ctp:23
+msgid "Internationalization e Localization"
+msgstr "国際化とローカリゼーション"
+
+#: Template/Webgrafia/index.ctp:27
+msgid "Tradução"
+msgstr "翻訳英語"
+
+#: Template/Webgrafia/index.ctp:31
+msgid "Aplicação para as traduções automáticas"
+msgstr "自動翻訳の申請"
+
+#: Template/Layout/default.ctp:29
+msgid "Idioma"
+msgstr "言語"

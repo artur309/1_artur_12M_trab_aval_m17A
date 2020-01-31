@@ -26,8 +26,9 @@
 		</ul>
 		<div class="top-bar-section">
 			<ul class="right">
+				<li><a href="Idiomas"><?=__('idioma')?></a></li>
 				<li><a href="Webgrafia">WebGrafia</a></li>
-				<li><a href="https://github.com/artur309">artur309</a></li>
+				<li><a href="https://github.com/artur309" target="_blank">artur309</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -35,7 +36,5 @@
 	<div class="container clearfix">
 		<?= $this->fetch('content') ?>
 	</div>
-	<footer> 
-	</footer>
 </body>
 </html>

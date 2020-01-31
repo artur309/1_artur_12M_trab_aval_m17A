@@ -1,11 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller; 
+namespace App\Controller;
+use Cake\I18n\I18n;
+
 class IngredientesController extends AppController
 {
 	public function index()
 	{
+		if($this->request->is('post')){
+			$locale = $this->request->data('Idiomas');
+			I18n::locale($locale);
+		// I18n::locale('de_DE');
+		}
+		
 		$ingrediente = $this->paginate($this->Ingredientes);
 		$this->set(compact('ingrediente'));
 	}
@@ -44,7 +52,6 @@ class IngredientesController extends AppController
 			$this->Flash->error(__('Erro ao salvar o ingrediente. Tente outra vez mais tarde.'));
 		}
 		$this->set(compact('ingrediente'));
-		$this->viewBuilder()->setOption('serialize', ['ingrediente']);
 	}
 
 	public function delete($id = null)

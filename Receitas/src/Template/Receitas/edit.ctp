@@ -39,13 +39,13 @@
 <div class="row">
 	<aside class="column">
 		<div class="side-nav">
-			<h4 class="heading"><?= __('Actions') ?></h4>
+			<h4 class="heading"><?= __('Ações') ?></h4>
 			<?= $this->Form->postLink(
-				__('Delete'),
+				__('Apagar'),
 				['action' => 'delete', $receita->id],
 				['confirm' => __('Tens a certeza que queres apagar #{0}?', $receita->id), 'class' => 'side-nav-item']
 			) ?>
-			<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+			<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'side-nav-item'])?>
 		</div>
 	</aside>
 	<div class="column-responsive column-80">
@@ -54,11 +54,11 @@
 			<fieldset>
 				<legend><?= __('Editar Receita') ?></legend>
 				<?php
-				echo $this->Form->control('nome');
-				echo $this->Form->control('descricao'); 
+				echo $this->Form->control(__('nome'));
+				echo $this->Form->control(__('descricao')); 
 				?>
 			</fieldset>
-			<?= $this->Form->button(__('Submit')) ?>
+			<?= $this->Form->button(__('Submeter')) ?>
 			<?= $this->Form->end() ?>
 		</div>
 	</div>

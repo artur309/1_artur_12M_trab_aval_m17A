@@ -1,4 +1,4 @@
-<?php $articles = json_decode($this->requestAction('articles/lastPosts/4'));?>
+<?php $articles = json_decode($this->requestAction('receitas/lastPosts/4'));?>
 
 <h2>Ultimos Posts</h2>
 <table>

@@ -39,11 +39,11 @@
 <div class="row">
 	<aside class="column">
 		<div class="side-nav">
-			<h4 class="heading"><?= __('Actions') ?></h4>
-			<?= $this->Html->link(__('Edit Bookmark'), ['action' => 'edit', $receita->id], ['class' => 'side-nav-item']) ?>
-			<?= $this->Form->postLink(__('Delete Bookmark'), ['action' => 'delete', $receita->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receita->id), 'class' => 'side-nav-item']) ?>
-			<?= $this->Html->link(__('List Bookmarks'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-			<?= $this->Html->link(__('New Bookmark'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+			<h4 class="heading"><?= __('Ações') ?></h4>
+			<?= $this->Html->link(__('Editar Receita'), ['action' => 'edit', $receita->id], ['class' => 'side-nav-item']) ?>
+			<?= $this->Form->postLink(__('Apagar Receita'), ['action' => 'delete', $receita->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receita->id), 'class' => 'side-nav-item']) ?>
+			<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+			<?= $this->Html->link(__('Nova Receita'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
 		</div>
 	</aside>
 	<div class="column-responsive column-80">
@@ -52,7 +52,7 @@
 			<table>
 				
 				<tr>
-					<th><?= __('Id') ?></th>
+					<th><?= __('id') ?></th>
 					<td><?= $this->Number->format($receita->id) ?></td>
 				</tr>
 				<tr>

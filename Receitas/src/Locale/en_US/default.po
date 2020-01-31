@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: z\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Template/Element/form.ctp:8
+msgid "Salvar post"
+msgstr "Save post"
+
+#: Template/Element/infoRodape.ctp:2
+msgid "Direitos Reservados a CakePHP e artur309"
+msgstr "Rights Reserved to CakePHP and artur309"
+
+#: Template/Element/paginacao.ctp:4
+msgid "Primeiro"
+msgstr "First"
+
+#: Template/Element/paginacao.ctp:5
+msgid "Anterior"
+msgstr "Previous"
+
+#: Template/Element/paginacao.ctp:7
+msgid "Proximo"
+msgstr "Next"
+
+#: Template/Element/paginacao.ctp:8
+msgid "Último"
+msgstr "Last"
+
+#: Template/Element/paginacao.ctp:10
+msgid "Página {{page}} de {{pages}}, mostrando {{current}} registro de um total de {{count}} total, começando no registro {{start}}, termiando em {{end}}"
+msgstr "{{Page}} page of {{pages}}, showing {{current}} record of a total of {{count}} total, starting at record {{start}}, ending at {{end}}"
+
+#: Template/Files/index.ctp:2
+#: Template/Ingredientes/index.ctp:4
+#: Template/Receitas/add.ctp:5
+#: Template/Receitas/edit.ctp:48
+#: Template/Receitas/view.ctp:45
+#: Template/Webgrafia/index.ctp:37
+msgid "Listar Receitas"
+msgstr "List Recipes"
+
+#: Template/Files/index.ctp:3
+#: Template/Ingredientes/add.ctp:43
+#: Template/Ingredientes/edit.ctp:48
+#: Template/Ingredientes/view.ctp:45
+#: Template/Receitas/index.ctp:4
+#: Template/Webgrafia/index.ctp:38
+msgid "Listar Ingredientes"
+msgstr "List Ingredients"
+
+#: Template/Files/index.ctp:8
+#: Template/Ingredientes/index.ctp:2
+#: Template/Receitas/index.ctp:2
+#: Template/Webgrafia/index.ctp:36
+msgid "Galeria de Receitas"
+msgstr "Recipe Gallery"
+
+#: Template/Files/index.ctp:11
+#: Template/Ingredientes/add.ctp:53
+#: Template/Ingredientes/edit.ctp:58
+#: Template/Receitas/edit.ctp:61
+msgid "Submeter"
+msgstr "To submit"
+
+#: Template/Ingredientes/add.ctp:42
+#: Template/Ingredientes/edit.ctp:42
+#: Template/Receitas/edit.ctp:42
+#: Template/Receitas/index.ctp:17
+#: Template/Receitas/view.ctp:42
+msgid "Ações"
+msgstr "Actions"
+
+#: Template/Ingredientes/add.ctp:50
+msgid "Adicionar Ingrediente"
+msgstr "Add Ingredient"
+
+#: Template/Ingredientes/add.ctp:51
+#: Template/Ingredientes/edit.ctp:56
+#: Template/Ingredientes/index.ctp:14
+#: Template/Receitas/edit.ctp:57
+#: Template/Receitas/index.ctp:15
+msgid "nome"
+msgstr "name"
+
+#: Template/Ingredientes/edit.ctp:44
+#: Template/Ingredientes/index.ctp:26
+#: Template/Receitas/edit.ctp:44
+#: Template/Receitas/index.ctp:29
+msgid "Apagar"
+msgstr "Delete"
+
+#: Template/Ingredientes/edit.ctp:46
+#: Template/Ingredientes/index.ctp:26
+msgid "Tens a certeza que queres apagar # {0}?"
+msgstr "Are you sure you want to delete # {0}?"
+
+#: Template/Ingredientes/edit.ctp:55
+#: Template/Ingredientes/view.ctp:43
+msgid "Editar Ingrediente"
+msgstr "Edit Ingredient"
+
+#: Template/Ingredientes/index.ctp:3
+#: Template/Ingredientes/view.ctp:46
+msgid "Novo Ingrediente"
+msgstr "New Ingredient"
+
+#: Template/Ingredientes/index.ctp:8
+msgid "Ingredientes"
+msgstr "Ingredients"
+
+#: Template/Ingredientes/index.ctp:15
+#: Template/Ingredientes/view.ctp:42
+#: Template/Receitas/add.ctp:4
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Ingredientes/index.ctp:24
+#: Template/Receitas/index.ctp:27
+msgid "Ver"
+msgstr "To see"
+
+#: Template/Ingredientes/index.ctp:25
+#: Template/Receitas/index.ctp:28
+msgid "Editar"
+msgstr "To edit"
+
+#: Template/Ingredientes/view.ctp:44
+msgid "Apagar Ingrediente"
+msgstr "Delete Ingredient"
+
+#: Template/Ingredientes/view.ctp:44
+#: Template/Receitas/view.ctp:44
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Are you sure you want to delete # {0}?"
+
+#: Template/Ingredientes/view.ctp:54
+#: Template/Receitas/view.ctp:55
+msgid "id"
+msgstr "id"
+
+#: Template/Ingredientes/view.ctp:58
+#: Template/Receitas/view.ctp:59
+msgid "Nome"
+msgstr "Name"
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Back"
+
+#: Template/Localizations/index.ctp:11
+#: Template/Pages/home.ctp:87
+msgid "msg"
+msgstr "msg"
+
+#: Template/Pages/home.ctp:84
+msgid "Change Language"
+msgstr "Change Language"
+
+#: Template/Pages/home.ctp:93
+msgid "Entrar"
+msgstr "Log in"
+
+#: Template/Receitas/add.ctp:12
+msgid "Adicionar Receita"
+msgstr "Add Recipe"
+
+#: Template/Receitas/add.ctp:18
+#: View/Helper/FormHelper.php:2028
+msgid "Submit"
+msgstr "Submit"
+
+#: Template/Receitas/edit.ctp:46
+msgid "Tens a certeza que queres apagar #{0}?"
+msgstr "Are you sure you want to delete # {0}?"
+
+#: Template/Receitas/edit.ctp:55
+#: Template/Receitas/view.ctp:43
+msgid "Editar Receita"
+msgstr "Edit Recipe"
+
+#: Template/Receitas/edit.ctp:58
+msgid "descricao"
+msgstr "description"
+
+#: Template/Receitas/index.ctp:3
+#: Template/Receitas/view.ctp:46
+msgid "Nova Receita"
+msgstr "New Recipe"
+
+#: Template/Receitas/index.ctp:9
+msgid "Receitas"
+msgstr "Revenue"
+
+#: Template/Receitas/index.ctp:16
+msgid "descrição"
+msgstr "description"
+
+#: Template/Receitas/index.ctp:29
+msgid "Tens a certeza que queres apagar a receita #{0}?"
+msgstr "Are you sure you want to delete recipe # {0}?"
+
+#: Template/Receitas/view.ctp:44
+msgid "Apagar Receita"
+msgstr "Delete Recipe"
+
+#: Template/Receitas/view.ctp:63
+msgid "Descrição"
+msgstr "description"
+
+#: Template/Webgrafia/index.ctp:1
+msgid "WEBGRAFIA"
+msgstr "WEBGRAPHY"
+
+#: Template/Webgrafia/index.ctp:5
+msgid "Documentação Framework CakePHP"
+msgstr "CakePHP Framework Documentation"
+
+#: Template/Webgrafia/index.ctp:9
+msgid "View das Imagens no Webroot"
+msgstr "View of images in Webroot"
+
+#: Template/Webgrafia/index.ctp:13
+msgid "Atualizar e Limpar formulário para as imagens"
+msgstr "Update and Clear form for images"
+
+#: Template/Webgrafia/index.ctp:17
+msgid "Tempo e Hora"
+msgstr "Time and Hour"
+
+#: Template/Webgrafia/index.ctp:23
+msgid "Internationalization e Localization"
+msgstr "Internationalization and Localization"
+
+#: Template/Webgrafia/index.ctp:27
+msgid "Tradução"
+msgstr "Translation"
+
+#: Template/Webgrafia/index.ctp:31
+msgid "Aplicação para as traduções automáticas"
+msgstr "Application for automatic translations"
+
+#: Template/Layout/default.ctp:29
+msgid "Idioma"
+msgstr "Language"

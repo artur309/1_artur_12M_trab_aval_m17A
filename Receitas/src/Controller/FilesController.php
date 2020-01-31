@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\I18n\I18n;
 
 class FilesController extends AppController
 {
@@ -13,6 +14,12 @@ class FilesController extends AppController
 
 	public function index()
 	{
+		if($this->request->is('post'))
+		{
+			$locale = $this->request->data('Idiomas');
+			I18n::locale($locale);
+		}
+
 		$this->Files->recursive = -1;
 		$this->paginate = [
 			'limit' => 6 //Limite máximo de registos mostrados por página
