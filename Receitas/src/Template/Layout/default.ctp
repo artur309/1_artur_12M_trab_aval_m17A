@@ -26,6 +26,9 @@
 		</ul>
 		<div class="top-bar-section">
 			<ul class="right">
+				<li style="background: #f08a24;line-height: 2.8125rem;padding: 0 0.9375rem;">
+					<?= $this->element('temperatura',["cidade" => 'Portimão']); //temperatura?>
+				</li>	
 				<li><a href="Idiomas"><?=__('idioma')?></a></li>
 				<li><a href="Webgrafia">WebGrafia</a></li>
 				<li><a href="https://github.com/artur309" target="_blank">artur309</a></li>
