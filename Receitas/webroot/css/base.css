@@ -7,11 +7,12 @@
 }
 
 .webgrafia{
-
+	padding: 10px 0;
 }
 
 .webgrafia a{
-	padding: 0 15px;
+	margin: 0 0 0px 15px;
+	outline: 1px solid #CCCCCC;
 }
 
 html {

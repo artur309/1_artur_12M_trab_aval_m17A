@@ -7,23 +7,25 @@ class IngredientesController extends AppController
 {
 	public function index()
 	{
-		if($this->request->is('post')){
+		//idioma
+		if($this->request->is('post'))
+		{
 			$locale = $this->request->data('Idiomas');
 			I18n::locale($locale);
-		// I18n::locale('de_DE');
 		}
 		
-		$ingrediente = $this->paginate($this->Ingredientes);
-		$this->set(compact('ingrediente'));
+		$this->Ingredientes->recursive = 0;
+		$this->paginate = array('limit'=>3); //limita a 3 items por pagina
+		$this->set('ingrediente',$this->paginate()); //paginacao 
 	}
 
-	public function view($id = null)
+	public function view($id = null) //funciona para ver item unico numa pagina
 	{
 		$ingrediente = $this->Ingredientes->get($id);
 		$this->set('ingrediente', $ingrediente);
 	}
 
-	public function add()
+	public function add() //adiciona um novo item unico 
 	{
 		$ingrediente = $this->Ingredientes->newEntity();
 		if ($this->request->is('post')) {
@@ -38,7 +40,7 @@ class IngredientesController extends AppController
 		$this->set(compact('ingrediente'));
 	}
 
-	public function edit($id = null)
+	public function edit($id = null) //edita o item selecionado
 	{
 		$ingrediente = $this->Ingredientes->get($id);
 		if ($this->request->is(['patch', 'post', 'put'])) {
@@ -52,7 +54,7 @@ class IngredientesController extends AppController
 		$this->set(compact('ingrediente'));
 	}
 
-	public function delete($id = null)
+	public function delete($id = null) //apaga o item selecionado
 	{
 		$this->request->allowMethod(['post', 'delete']);
 		$ingrediente = $this->Ingredientes->get($id);

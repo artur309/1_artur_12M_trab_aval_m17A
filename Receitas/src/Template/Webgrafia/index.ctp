@@ -1,5 +1,6 @@
 <h1><?=__('WEBGRAFIA')?></h1>
 
+<!-- geral e  imagens -->
 <div class="webgrafia">
 	<a href="https://book.cakephp.org/3/en" target="_blank">
 		<?=__('Documentação Framework CakePHP')?>
@@ -18,11 +19,16 @@
 	</a>
 </div>
 
+<!-- tradutor -->
 <div class="webgrafia">
 	<a href="https://book.cakephp.org/3/en/core-libraries/internationalization-and-localization.html"  target="_blank">
 		<?=__('Internationalization e Localization')?>
 	</a>
-	
+
+	<a href="https://www.tutorialspoint.com/cakephp/cakephp_internationalization.htm"  target="_blank">
+		<?=__('Tutorial Point traducao TUtorial')?>
+	</a>	
+
 	<a href="https://book.cakephp.org/3/en/console-and-shells/i18n-shell.Html"  target="_blank">
 		<?=__('Tradução')?>
 	</a>	
@@ -36,6 +42,7 @@
 	</a>
 </div>
 
+<!-- OpenweatherMap API-->
 <div class="webgrafia">
 	<a href="https://openweathermap.org/api" target="_blank">
 		<?=__('Openweather API')?>

@@ -35,5 +35,6 @@
 		<?= $this->element('paginacao', ["controller" => 'Receitas']);//paginacao da view especificada ?> 
 	</div>
 </div>
+<?= $this->element('lastImages'); //apresenta ultiams 3 images ?>
 
-<?= $this->element('infoRodape'); ?>
+<?= $this->element('infoRodape'); //rodape de informacao ?>

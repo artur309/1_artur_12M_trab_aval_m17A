@@ -21,9 +21,7 @@ class FilesController extends AppController
 		}
 
 		$this->Files->recursive = -1;
-		$this->paginate = [
-			'limit' => 6 //Limite máximo de registos mostrados por página
-		];
+		$this->paginate = ['limit' => 6 ];//Limite máximo de registos mostrados por página
 		$this->set('files', $this->paginate()); //paginacao dos itens
 
 		//upload
@@ -34,8 +32,16 @@ class FilesController extends AppController
 		}
 	}
 
-	public function back()
+	public function lastImages($limit)
 	{
-		$this->redirect('/Receitas');
+		$files = $this->Files->find('all',
+			array(
+				'fields'=>array('id','filename'),
+				'recursive'=>0,
+				'order'=>array('created DESC'),
+				'limit'=>$limit)
+		);
+		$this->response->body(json_encode($files));
+		return $this->response;
 	}
 }
