@@ -23,3 +23,6 @@
 </div>
 
 <?= $this->element('paginacao', ["controller" => 'Files']); //paginacao da view especificada?> 
+
+
+<?= $this->element('infoRodape'); //rodape de informacao ?>

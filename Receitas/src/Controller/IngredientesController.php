@@ -1,7 +1,6 @@
 <?php
-declare(strict_types=1);
-
 namespace App\Controller;
+use App\Controller\AppController;
 use Cake\I18n\I18n;
 
 class IngredientesController extends AppController
@@ -26,7 +25,7 @@ class IngredientesController extends AppController
 
 	public function add()
 	{
-		$ingrediente = $this->Ingredientes->newEmptyEntity();
+		$ingrediente = $this->Ingredientes->newEntity();
 		if ($this->request->is('post')) {
 			$ingrediente = $this->Ingredientes->patchEntity($ingrediente, $this->request->getData());
 			if ($this->Ingredientes->save($ingrediente)) {
@@ -44,7 +43,6 @@ class IngredientesController extends AppController
 		$ingrediente = $this->Ingredientes->get($id);
 		if ($this->request->is(['patch', 'post', 'put'])) {
 			$ingrediente = $this->Ingredientes->patchEntity($ingrediente, $this->request->getData());
-			$ingrediente->user_id = $this->Auth->user('id');
 			if ($this->Ingredientes->save($ingrediente)) {
 				$this->Flash->success('O ingrediente foi editado.');
 				return $this->redirect(['action' => 'index']);
@@ -58,11 +56,10 @@ class IngredientesController extends AppController
 	{
 		$this->request->allowMethod(['post', 'delete']);
 		$ingrediente = $this->Ingredientes->get($id);
-		if ($this->Ingredientes->delete($ingrediente)) {
+		if ($this->Ingredientes->delete($ingrediente))
 			$this->Flash->success(__('O ingrediente foi apagado.'));
-		} else {
+		else
 			$this->Flash->error(__('Erro ao salvar o ingrediente. Tente outra vez mais tarde.'));
-		}
 		return $this->redirect(['action' => 'index']);
 	}
 }

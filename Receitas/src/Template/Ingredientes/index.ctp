@@ -32,3 +32,5 @@
 	</div>
 	<?= $this->element('paginacao', ["controller" => 'Ingredientes']);//paginacao da view especificada ?> 
 </div>
+
+<?= $this->element('infoRodape'); //rodape de informacao ?>

@@ -1,7 +1,7 @@
 <div class="row">
 	<aside class="column">
 		<div class="side-nav">
-			<h4 class="heading"><?= __('Actions') ?></h4>
+			<h4 class="heading"><?= __('Ações') ?></h4>
 			<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
 		</div>
 	</aside>
@@ -20,3 +20,5 @@
 		</div>
 	</div>
 </div>
+
+<?= $this->element('infoRodape'); //rodape de informacao ?>

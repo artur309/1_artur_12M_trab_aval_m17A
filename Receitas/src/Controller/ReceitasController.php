@@ -1,11 +1,17 @@
 <?php
 namespace App\Controller;
-
 use App\Controller\AppController;
+use Cake\ORM\Table;
 use Cake\I18n\I18n;
 
 class ReceitasController extends AppController
 {
+	public function initialize()
+	{
+		parent::initialize();
+		$this->loadComponent('Flash'); // Inclui o FlashComponent
+	}
+
 	public function index()
 	{
 		if($this->request->is('post'))
@@ -20,19 +26,6 @@ class ReceitasController extends AppController
 		// $this->set(compact('receita'));
 	}
 
-	public function lastPosts($limit)
-	{
-		$articles = $this->Receitas->find('all',
-			array(
-				'fields'=>array('id','nome','descricao'),
-				'recursive'=>0,
-				'order'=>array('created DESC'),
-				'limit'=>$limit)
-		);
-		$this->response->body(json_encode($articles));
-		return $this->response;
-	}
-
 	public function view($id = null)
 	{
 		$receita = $this->Receitas->get($id);
@@ -41,7 +34,7 @@ class ReceitasController extends AppController
 
 	public function add()
 	{
-		$receita = $this->Receitas->newEmptyEntity();
+		$receita = $this->Receitas->newEntity();
 		if ($this->request->is('post')) {
 			$receita = $this->Receitas->patchEntity($receita, $this->request->getData());
 			if ($this->Receitas->save($receita)) {
@@ -50,7 +43,8 @@ class ReceitasController extends AppController
 			}
 			$this->Flash->error(__('Erro ao salvar a receita. Tente outra vez mais tarde.'));
 		}
-		$this->set(compact('receita'));
+		$this->set('receita', $receita);
+		// $this->set(compact('receita'));
 	}
 
 	public function edit($id = null)
@@ -71,11 +65,10 @@ class ReceitasController extends AppController
 	{
 		$this->request->allowMethod(['post', 'delete']);
 		$receita = $this->Receitas->get($id);
-		if ($this->Receitas->delete($receita)) {
+		if ($this->Receitas->delete($receita))
 			$this->Flash->success(__('A receita foi apagada.'));
-		} else {
+		else
 			$this->Flash->error(__('Erro ao salvar a receita. Tente outra vez mais tarde.'));
-		}
 		return $this->redirect(['action' => 'index']);
 	}
 }

@@ -8,7 +8,7 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class BookmarksTable extends Table
+class IngredientesTable extends Table
 {
 	public function initialize(array $config): void
 	{
@@ -17,8 +17,6 @@ class BookmarksTable extends Table
 		$this->setTable('ingredientes');
 		$this->setDisplayField('nome');
 		$this->setPrimaryKey('id');
-
-		$this->addBehavior('Timestamp');
 	}
 
 	public function validationDefault(Validator $validator): Validator

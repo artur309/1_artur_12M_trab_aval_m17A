@@ -1,51 +1,15 @@
-<style type="text/css">
-	body {
-		background: orange;
-	}
-	.top-nav-title span {
-		color: black;
-	}
-	.button, button{
-		margin: 0 5px;
-		margin-bottom: 1.0rem;
-		background-color: orange;
-		border-color: orange;
-	}
-	.button:hover, button:hover{
-		transition: all 0.3s cubic-bezier(0.15, 0.9, 0.34, 0);
-		margin: 0 5px;
-		margin-bottom: 1.0rem;
-		background-color: red;
-		border-color: red;
-	}
-	.top-nav-title a, .top-nav-links a {
-		font-weight: bold;
-		color: white;
-	}
-	.actions a{
-		padding: 0 0.4rem;
-		color: orange;
-	}
-	.actions a: hover{
-		color: red;
-		font-weight: bold;
-		padding: 0 0.4rem;
-	}
-	a:focus, a:hover {
-		color: red;
-	}
-</style>
-
 <div class="row">
 	<aside class="column">
 		<div class="side-nav">
 			<h4 class="heading"><?= __('Ações') ?></h4>
-			<?= $this->Form->postLink(
-				__('Apagar'),
-				['action' => 'delete', $ingrediente->id],
-				['confirm' => __('Tens a certeza que queres apagar # {0}?', $ingrediente->id), 'class' => 'side-nav-item']
-			) ?>
-			<?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+			<div class="buttons">
+				<?= $this->Form->postLink(
+					__('Apagar'),
+					['action' => 'delete', $ingrediente->id],
+					['confirm' => __('Tens a certeza que queres apagar # {0}?', $ingrediente->id), 'class' => 'button float-left']
+				) ?>
+				<?= $this->Html->link(__('Listar Ingredientes'), ['action' => 'index'], ['class' => 'button float-left']) ?>
+			</div>
 		</div>
 	</aside>
 	<div class="column-responsive column-80">
@@ -60,3 +24,5 @@
 		</div>
 	</div>
 </div>
+
+<?= $this->element('infoRodape'); //rodape de informacao ?>

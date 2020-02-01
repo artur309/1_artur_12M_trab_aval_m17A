@@ -40,17 +40,19 @@
 	<aside class="column">
 		<div class="side-nav">
 			<h4 class="heading"><?= __('Ações') ?></h4>
-			<?= $this->Html->link(__('Editar Receita'), ['action' => 'edit', $receita->id], ['class' => 'side-nav-item']) ?>
-			<?= $this->Form->postLink(__('Apagar Receita'), ['action' => 'delete', $receita->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receita->id), 'class' => 'side-nav-item']) ?>
-			<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-			<?= $this->Html->link(__('Nova Receita'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+			<div class="buttons">
+				<?= $this->Html->link(__('Editar Receita'), ['action' => 'edit', $receita->id], ['class' => 'button float-left']) ?>
+				<?= $this->Form->postLink(__('Apagar Receita'), ['action' => 'delete', $receita->id], ['confirm' => __('Are you sure you want to delete # {0}?', $receita->id), 'class' => 'button float-left']) ?>
+				<?= $this->Html->link(__('Listar Receitas'), ['action' => 'index'], ['class' => 'button float-left']) ?>
+				<?= $this->Html->link(__('Nova Receita'), ['action' => 'add'], ['class' => 'button float-left']) ?>
+			</div>
 		</div>
 	</aside>
 	<div class="column-responsive column-80">
 		<div class="bookmarks view content">
 			<h3><?= h($receita->title) ?></h3>
 			<table>
-				
+
 				<tr>
 					<th><?= __('id') ?></th>
 					<td><?= $this->Number->format($receita->id) ?></td>
@@ -67,3 +69,5 @@
 		</div>
 	</div>
 </div>
+
+<?= $this->element('infoRodape'); //rodape de informacao ?>

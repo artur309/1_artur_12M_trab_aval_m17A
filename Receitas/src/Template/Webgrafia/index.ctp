@@ -36,7 +36,17 @@
 	</a>
 </div>
 
-<div class="buttons>
+<div class="webgrafia">
+	<a href="https://openweathermap.org/api" target="_blank">
+		<?=__('Openweather API')?>
+	</a>
+
+	<a href="https://www.youtube.com/watch?v=bjaHeXMtiCM" target="_blank">
+		<?=__('Tutorial Openweather API')?>
+	</a>	
+</div>
+
+<div class="buttons">
 	<?= $this->Html->link(__('Galeria de Receitas'), ['controller' => 'Files','action' => 'index'], ['class' => 'button left']) ?>
 	<?= $this->Html->link(__('Listar Receitas'), ['controller' => 'Receitas','action' => 'index'], ['class' => 'button float-right']) ?>
 	<?= $this->Html->link(__('Listar Ingredientes'), ['controller' => 'Ingredientes','action' => 'index'], ['class' => 'button float-left']) ?>

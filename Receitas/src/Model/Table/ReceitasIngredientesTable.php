@@ -8,17 +8,18 @@ use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class BookmarksTable extends Table
+class ReceitasIngredientesTable extends Table
 {
 	public function initialize(array $config): void
 	{
 		parent::initialize($config);
-		
-		$this->setTable('receitas');
-		$this->setDisplayField('nome');
-		$this->setPrimaryKey('id');
-	}
 
+		$this->setTable('receitas_ingredientes');
+		$this->setPrimaryKey('id');
+		$this->setPrimaryKey('id');
+
+		$this->addBehavior('Timestamp');
+	}
 	public function validationDefault(Validator $validator): Validator
 	{
 		$validator
@@ -26,14 +27,19 @@ class BookmarksTable extends Table
 		->allowEmptyString('id', null, 'create');
 
 		$validator
-		->scalar('nome')
-		->maxLength('nome', 50)
-		->allowEmptyString('nome');
+		->scalar('title')
+		->maxLength('title', 50)
+		->allowEmptyString('title');
 
 		$validator
-		->scalar('descricao')
-		->allowEmptyString('descricao');
+		->scalar('description')
+		->allowEmptyString('description');
+
+		$validator
+		->scalar('url')
+		->allowEmptyString('url');
 
 		return $validator;
 	}
+
 }
